@@ -9,14 +9,14 @@
    _. input->input prompt
    _. output->output prompt
 
-# sequence to sequence mapping techniques:
+# sequence to sequence mapping techniques: can be implemented by all RNN, LSTM, GRU
 
 1. one to one mapping
-2. one to many
-3. many to many mapping
-4. many to one mapping
+2. one to many i.e. image capturing
+3. many to many mapping : language translation
+4. many to one mapping i.e. sentiment analysis
 
-# a bit conext
+# a bit context for LLM
 
 to process sequence data( sequence to sequence mapping)
 
@@ -28,5 +28,17 @@ to process sequence data( sequence to sequence mapping)
 3. GRU:updated LSTM verision; no cell state; everythong is done by hidden state itself; 2 gates:
    _, reset
    _.update gate
+
+## ISSUE: with this seq to seq mappigng is whatever output we are getting is depended on input.
+
+if input is of 5 length , output would be 5 too. so fixed length input and output
+
+## to cope with this of fixed dimensionality: encoder decoder(paper: sequence to sequence with nn )
+
+Encoder(RNN, LSTM, GRU) -> context vector(latent) -> decoder(RNN, LSTM, GRU)
+
+encoder decoder architecture was able to deal with fixed dimensonality issue but still wasn't able to sustain the context for longer sentences.
+
+## to cope with that comes attention inside context:
 
 ## after 2019
