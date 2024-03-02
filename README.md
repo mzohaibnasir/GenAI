@@ -41,7 +41,7 @@ encoder decoder architecture was able to deal with fixed dimensonality issue but
 
 ## to cope with that comes attention inside context:
 
-https://cjlise.github.io/machine-learning/Neural-Machine-Translation-Attention/
-http://jalammar.github.io/illustrated-transformer/
+1. https://cjlise.github.io/machine-learning/Neural-Machine-Translation-Attention/
+2. http://jalammar.github.io/illustrated-transformer/
 
 ## after 2019
