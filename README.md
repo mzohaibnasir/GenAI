@@ -45,4 +45,38 @@ encoder decoder architecture was able to deal with fixed dimensonality issue but
 2. http://jalammar.github.io/illustrated-transformer/
 3. https://youtu.be/SMZQrJ_L1vo
 
-## after 2019
+## after 2019U an encoder/fedcoder. Transformers were introduced
+
+# LLM:
+
+is a trained DL model that understands and generate text in a human like fashion. LLMs are good at understanding and gnenerating human language. Large because of the size and complexity of NN and size of training dataset.
+
+A single LLM can :
+\*. Text classification
+_. Text generation,
+_. chatbot
+_. summarizer
+_. Translation
+\*. Code generation, etc
+
+# LLMs are based on transformer.
+
+# few milestones in LLM:
+
+_. BERT
+_. GPT
+_. XLM
+_. T5
+_. Megatron
+_. M2M
+
+# But some of LLMs are using encoder , some are using decoder and some are using both.
+
+# API
+
+\*. https://platform.openai.com/
+\*. https://www.ai21.com/
+
+# Transfer Learning vs Fine Tuning
+
+Transfer learning involves using a pre-trained model as a starting point and freezing all the pre-trained layers while training only the new layers added on top. Fine-tuning, on the other hand, allows the pre-trained layers to be updated during training, which can lead to better performance on the new task.
