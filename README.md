@@ -16,7 +16,7 @@
 3. many to many mapping : language translation
 4. many to one mapping i.e. sentiment analysis
 
-# a bit context for LLM
+# a bit of context for LLM
 
 to process sequence data( sequence to sequence mapping)
 
@@ -43,5 +43,6 @@ encoder decoder architecture was able to deal with fixed dimensonality issue but
 
 1. https://cjlise.github.io/machine-learning/Neural-Machine-Translation-Attention/
 2. http://jalammar.github.io/illustrated-transformer/
+3. https://youtu.be/SMZQrJ_L1vo
 
 ## after 2019
