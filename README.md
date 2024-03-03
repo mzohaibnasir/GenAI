@@ -89,3 +89,16 @@ Transfer learning involves using a pre-trained model as a starting point and fre
 2. Description:
 3. context window: 16835 token as input, return 1096 tokens ::: it means 'our input/output prompts are nothing but collections of tokens. The context window in OpenAI models like GPT-3.5 Turbo refers to the maximum number of tokens or words that the model can consider at a time when generating responses. For example, the GPT-3.5 Turbo model with a context window of 16,385 tokens can support approximately 20 pages of text in a single request. This large context window allows the model to process and understand extensive amounts of information, enabling more accurate and contextually relevant responses. The context window size is crucial as it determines the amount of information the model can use to generate coherent and meaningful outputs
 4. Training data:
+
+# PlayGround:
+
+1. System: How your model is going to behave.`You are a helpful assistant.
+2. User
+3. Model
+   1. Model
+   2. Temperature:controls randomness, 0 mean determininstc & repetitive which mean less creativity
+   3. Max Length: token length
+   4. Stop Sequences
+   5. Top P: adds diversity..toP~0 means the model samples from a narrower selection of works. This makes output less random and diverse since the most probable token will be selected. AT Top P=0.1, only token comprising of the top10% probibility mass are considered.
+   6. Frequency penalty: repetition penalty.. helps avoid same words too often
+   7. Presence Penalty: The OpenAI Presence Penalty setting is used to adjust how much presence of tokens in the source material will influence the output of the model.
