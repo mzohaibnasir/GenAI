@@ -102,3 +102,7 @@ Transfer learning involves using a pre-trained model as a starting point and fre
    5. Top P: adds diversity..toP~0 means the model samples from a narrower selection of works. This makes output less random and diverse since the most probable token will be selected. AT Top P=0.1, only token comprising of the top10% probibility mass are considered.
    6. Frequency penalty: repetition penalty.. helps avoid same words too often
    7. Presence Penalty: The OpenAI Presence Penalty setting is used to adjust how much presence of tokens in the source material will influence the output of the model.
+
+############################################################################################################
+
+# Function Calling
