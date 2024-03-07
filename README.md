@@ -99,10 +99,60 @@ Transfer learning involves using a pre-trained model as a starting point and fre
    2. Temperature:controls randomness, 0 mean determininstc & repetitive which mean less creativity
    3. Max Length: token length
    4. Stop Sequences
-   5. Top P: adds diversity..toP~0 means the model samples from a narrower selection of works. This makes output less random and diverse since the most probable token will be selected. AT Top P=0.1, only token comprising of the top10% probibility mass are considered.
+   5. Top P: adds diversity..toP~0 means the model samples from a narrower selection of works. This makes output less random and diverse since the most probable token will be selected. AT Top P=0.1, only token comprising of the top 10% probability mass are considered.
    6. Frequency penalty: repetition penalty.. helps avoid same words too often
    7. Presence Penalty: The OpenAI Presence Penalty setting is used to adjust how much presence of tokens in the source material will influence the output of the model.
 
 ############################################################################################################
 
-# Function Calling :`function calling` connects LLM to external tools(API):.
+# Function Calling :
+
+         `function calling` connects LLM to external tools(API):.
+
+###################################################################################################################
+
+# limitations of OpenAI api
+
+1. openai model is not free.
+2. can access limited models.(only openai)
+3. data is not latest.
+
+# with langchain:
+
+1. you can access diff any model by using diffeent AOI
+2. access private data resources
+3. access any third party API
+4. Langchain has :
+   1. chains
+   2. Document loader
+   3. Agents
+   4. access third party LLM(HF,etc)
+   5. it can retain memory
+   6. Prompt template
+
+# Langchain is just a wrapper around openaAI API.
+
+`prompt->langchain->opeanAi API(can be another)-> LLM`
+
+it can also connect to data sources
+`prompt->langchain->google/wiki/datasources`
+
+# LANGCHAIN: with langchain you can access any LLM
+
+LangChain is a robust library designed to simplify interactions with various large language model (LLM) providers, including OpenAI, Cohere, Bloom, Huggingface, and others. What sets LangChain apart is its unique feature: the ability to create Chains, and logical connections that help in bridging one or multiple LLMs.
+
+Central to LangChain is a vital component known as LangChain Chains, forming the core connection among one or several large language models (LLMs).
+
+` Prompt template + LLM -> LLMChain`
+In certain sophisticated applications, it becomes necessary to chain LLMs together, either with each other or with other elements. These Chains empower us to integrate numerous components, weaving them into a cohesive application. Let’s delve deeper into the distinct types of Chains.
+
+Through the creation of chains, multiple elements can seamlessly come together. Imagine this scenario: a chain is crafted to take in user input, polish it using a PromptTemplate, and subsequently pass on this refined response to a large language model (LLM). This streamlined process not only simplifies but also enriches the overall functionality of the system. In essence, chains serve as the linchpin, seamlessly connecting different parts of the application and enhancing its capabilities. Let’s summarize this:
+
+    Integrating prompt templates with LLMs allows for a powerful synergy.
+    By taking the output of one LLM and using it as input for the next, it becomes feasible to connect multiple LLMs in a sequential fashion.
+    Blending LLMs with external data enables the system to respond to inquiries effectively.
+    Integrating LLMs with long-term memory, such as chat history, enhances the overall context and depth of interactions.
+
+# Chains refer to sequences of calls - whether to an LLM, a tool, or a data preprocessing step.
+
+1. use openai via langchain:
