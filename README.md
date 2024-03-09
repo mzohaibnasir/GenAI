@@ -159,4 +159,14 @@ The Zero-shot ReAct Agent is a language generation model that can create realist
 
 # Chains refer to sequences of calls - whether to an LLM, a tool, or a data preprocessing step.
 
-1. use openai via langchain:
+# LANGCHAIN
+
+1. Agents
+2. Prompt templates
+3. Chains
+4. Document loader
+5. Memory:
+
+# Memory in Langchain
+
+refers to remembering happening conversation.... retaining the memory like chatgpt.
