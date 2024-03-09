@@ -148,10 +148,14 @@ In certain sophisticated applications, it becomes necessary to chain LLMs togeth
 
 Through the creation of chains, multiple elements can seamlessly come together. Imagine this scenario: a chain is crafted to take in user input, polish it using a PromptTemplate, and subsequently pass on this refined response to a large language model (LLM). This streamlined process not only simplifies but also enriches the overall functionality of the system. In essence, chains serve as the linchpin, seamlessly connecting different parts of the application and enhancing its capabilities. Let’s summarize this:
 
-    Integrating prompt templates with LLMs allows for a powerful synergy.
-    By taking the output of one LLM and using it as input for the next, it becomes feasible to connect multiple LLMs in a sequential fashion.
-    Blending LLMs with external data enables the system to respond to inquiries effectively.
-    Integrating LLMs with long-term memory, such as chat history, enhances the overall context and depth of interactions.
+Integrating prompt templates with LLMs allows for a powerful synergy.
+By taking the output of one LLM and using it as input for the next, it becomes feasible to connect multiple LLMs in a sequential fashion.
+Blending LLMs with external data enables the system to respond to inquiries effectively.
+Integrating LLMs with long-term memory, such as chat history, enhances the overall context and depth of interactions.
+
+# React
+
+The Zero-shot ReAct Agent is a language generation model that can create realistic contexts even without being trained on specific data.
 
 # Chains refer to sequences of calls - whether to an LLM, a tool, or a data preprocessing step.
 
