@@ -170,3 +170,8 @@ The Zero-shot ReAct Agent is a language generation model that can create realist
 # Memory in Langchain
 
 refers to remembering happening conversation.... retaining the memory like chatgpt.
+
+A memory system needs to support two basic actions: reading and writing. Recall that every chain defines some core execution logic that expects certain inputs. Some of these inputs come directly from the user, but some of these inputs can come from memory. A chain will interact with its memory system twice in a given run.
+
+1. AFTER receiving the initial user inputs but BEFORE executing the core logic, a chain will READ from its memory system and augment the user inputs.
+2. AFTER executing the core logic but BEFORE returning the answer, a chain will WRITE the inputs and outputs of the current run to memory, so that they can be referred to in future runs.
