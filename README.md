@@ -175,3 +175,10 @@ A memory system needs to support two basic actions: reading and writing. Recall 
 
 1. AFTER receiving the initial user inputs but BEFORE executing the core logic, a chain will READ from its memory system and augment the user inputs.
 2. AFTER executing the core logic but BEFORE returning the answer, a chain will WRITE the inputs and outputs of the current run to memory, so that they can be referred to in future runs.
+
+# SETUP.py: # to install local pakage in virtual environment
+
+# I want to consider `mcqgenerator` as a local python package.
+
+Package is nothing but a folder containing multiple python files.
+To treat folder as pkg, it must contain `__init__.py`
