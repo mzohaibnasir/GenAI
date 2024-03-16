@@ -10,16 +10,3 @@ setup(
     install_requires=["openai", "langchain", "streamlit", "python-dotenv", "PyPDF2"],
     packages=find_packages(),  # find local pkg from local directory # find directory with `__init__.py` file
 )
-
-"""
-to install python pkgs you can you
-`pip install -r requirements.txt`
-but to installl local pkgs into env
-1. you run install this setup.py as `python setup.py`
-or 
-2. -e .
-
-
-
-
-"""
