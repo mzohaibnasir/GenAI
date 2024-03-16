@@ -182,3 +182,4 @@ A memory system needs to support two basic actions: reading and writing. Recall 
 
 Package is nothing but a folder containing multiple python files.
 To treat folder as pkg, it must contain `__init__.py`
+here `src` is a pkg
