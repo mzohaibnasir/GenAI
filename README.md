@@ -183,3 +183,74 @@ A memory system needs to support two basic actions: reading and writing. Recall 
 Package is nothing but a folder containing multiple python files.
 To treat folder as pkg, it must contain `__init__.py`
 here `src` is a pkg
+
+#######################################################################
+
+# VECTOR DATABASE
+
+is a database for storing high dimensional vector such as word embeddings and image embeddings.
+A vector database stores pieces of information as vectors. Vector databases cluster related items together, enabling similarity searches and the construction of powerful AI models.
+
+How do vector databases work?
+Each vector in a vector database corresponds to an object or item, whether that is a word, an image, a video, a movie, a document, or any other piece of data. These vectors are likely to be lengthy and complex, expressing the location of each object along dozens or even hundreds of dimensions.
+
+For example, a vector database of movies may locate movies along dimensions like running time, genre, year released, parental guidance rating, number of actors in common, number of viewers in common, and so on. If these vectors are created accurately, then similar movies are likely to end up clustered together in the vector database.
+
+How are vector databases used?
+Similarity and semantic searches: Vector databases allow applications to connect pertinent items together. Vectors that are clustered together are similar and likely relevant to each other. This can help users search for relevant information (e.g. an image search), but it also helps applications:
+Recommend similar products
+Suggest songs, movies, or shows
+Suggest images or video
+Machine learning and deep learning: The ability to connect relevant items of information makes it possible to construct machine learning (and deep learning) models that can do complex cognitive tasks.
+Large language models (LLMs) and generative AI: LLMs, like that on which ChatGPT and Bard are built, rely on the contextual analysis of text made possible by vector databases. By associating words, sentences, and ideas with each other, LLMs can understand natural human language and even generate text.
+To summarize: Vector databases work at scale, work quickly, and are more cost-effective than querying machine learning models without them.
+
+# Embedding generation
+
+## non dl (frequency based)
+
+1. BOW(docmat)
+2. TF-IDF
+3. n-gram
+4. One hot encoding
+5. integer encoding
+
+## issues with non-dl
+
+### for One hot encoding & integer encoding
+
+1. sparse matrix(too many zeroes)
+2. no context
+
+### for BOW(docmat), TF-IDF & n-gram
+
+1. we create encoding using vocabularly
+2. still no context
+3. frequency based
+
+## with dl
+
+1. word2vec
+2. fast text
+3. ELMO
+4. BERT
+5. Glove(matrix factorization)
+
+### benefits
+
+1. creating dense vector
+2. context-full
+
+## WORD2VEC
+
+based on features i.e. king has features
+we pass features into NN and we get embedding vector
+
+Vector databases store embeddings
+
+1. are used in searching
+2. clustering where text strings are grouped by similarity
+3. Recommendation: related items are recommended
+4. classification
+
+# Embeddings using openAI
