@@ -243,7 +243,8 @@ To summarize: Vector databases work at scale, work quickly, and are more cost-ef
 
 ## WORD2VEC
 
-based on features i.e. king has features
+# `based on features i.e. king has features`
+
 we pass features into NN and we get embedding vector
 
 Vector databases store embeddings
