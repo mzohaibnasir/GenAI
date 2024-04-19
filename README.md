@@ -256,4 +256,30 @@ we pass features into NN and we get embedding vector
 
 #####################################################################################################
 
-# PINECONE
+# PINECONE(cloud based DB)
+
+we'll collect data from pdfs and convert it into embeddings(openAI) and they will be store in pinecone
+
+## Tokenization : dividing data into chunks
+
+But what occurs when you present these models with a document that exceeds their context window? This is where a clever strategy known as "chunking" comes into play. Chunking involves dividing the document into smaller, more manageable sections that fit comfortably within the context window of the large language model.
+
+Langchain provides users with a range of chunking techniques to choose from. However, among these options, the RecursiveCharacterTextSplitter emerges as the favored and strongly recommended method.
+
+The RecursiveCharacterTextSplitter takes a large text and splits it based on a specified chunk size. It does this by using a set of characters. The default characters provided to it are ["\n\n", "\n", " ", ""].
+
+How the text is split: by list of characters
+
+How the chunk size is measured: by number of characters
+
+trying to keep paragraphs, then sentences,then words
+
+Important parameters to know here are chunkSize and chunkOverlap. chunkSize controls the max size (in terms of number of characters) of the final documents. chunkOverlap specifies how much overlap there should be between chunks. This is often helpful to make sure that the text isn't split weirdly.
+
+#####################################
+
+# Chromadb is not cloud based.
+
+# pinecone is designed to handle real-time search and similarity matching at scale.. automatic indexing is available but its costly and limited querying functionality
+
+# chromadb is smilar to pinecone(designed for vector storage and handle retreval). opensource. extensive querying but deployment complexity and might not be great as pinecone in realtime.
