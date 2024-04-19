@@ -247,11 +247,13 @@ To summarize: Vector databases work at scale, work quickly, and are more cost-ef
 
 we pass features into NN and we get embedding vector
 
-Vector databases store embeddings. it indexes and store embeddings for faster retrieval and similarity search.
+# Vector databases store embeddings. it indexes and store embeddings for faster retrieval and similarity search.
 
 1. are used in searching
 2. clustering where text strings are grouped by similarity
 3. Recommendation: related items are recommended
 4. classification
 
-# Embeddings using openAI
+#####################################################################################################
+
+# PINECONE
